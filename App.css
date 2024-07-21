@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ce7730;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(168, 187, 231);
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.maze {
+  display: grid;
+  grid-template-columns: repeat(20, 100px);
+  grid-template-rows: repeat(20, 100px);
+  gap: 1px;
+  border: 2px solid rgb(57, 12, 94);
+  margin: 20px auto;
+  position: relative;
+}
+
+.maze-row {
+  display: contents;
+}
+
+.maze-cell {
+  width: 100%;
+  height: 100%;
+}
+
+.wall {
+  background-color: rgb(110, 40, 231);
+}
+
+.passage {
+  background-color: rgb(233, 212, 94);
+}
